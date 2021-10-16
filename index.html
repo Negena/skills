@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+       body{
+         background: #000;
+       }
+       div#tag{
+         position: absolute;
+         left: 25%;
+         top: 15%;
+       }
+    </style>
+  </head>
+  <body>
+<div id="tag">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="script.js
+">
+
+</script>
+<script type="text/javascript">
+  $(function(){
+    let  entries = [
+    {label: "HTML"},
+    {label: "CSS"},
+    {label: "Ruby"},
+    {label: "JAVASCRIPT"},
+    {label: "PostgreSQL"},
+    {label: "Jquery"},
+    {label: "MySQL"},
+    {label: "Node JS"},
+    {label: "XML"},
+    {label: "REST API"},
+    {label: "C++"},
+    {label: "EXPRESS"},
+    {label: "mongoDB"},
+    {label: "mongoose"},
+    {label: "PHP"},
+    {label: "Ruby On Rails"},
+    {label: "Excel"},
+    {label: "WebSockets"},
+    {label: "SOAP"},
+    {label: "git"},
+    {label: "webpack"},
+    {label: "JSON"},
+    {label: "AJAX"},
+    {label: "HTTP"}
+  ];
+  let settings = {
+    entries: entries,
+    width: 800,
+    height: 900,
+    radius: "65%",
+    radiusMin: 75,
+    bgDraw: true,
+    bgColor: '#000',
+    opacityOver: 1.00,
+    opacityOut: 0.05,
+    opcitySpeed: 6,
+    fov: 800,
+    speed: 1.5,
+    fontFamily: "Ariel",
+    fontSize: "30",
+    fontColor: "red",
+    fontWeight: "bold",
+    fontStyle: "normal",
+    formSretch: "normal",
+    fontToUpperCase: true
+  };
+  $("#tag").svg3DTagCloud(settings);
+  })
+</script>
+  </body>
+</html>
